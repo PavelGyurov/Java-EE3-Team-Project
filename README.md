@@ -1,1 +1,1 @@
-# ITtalentsSeason5Java5
+# ITtalents Season5 Java EE 3 team project
