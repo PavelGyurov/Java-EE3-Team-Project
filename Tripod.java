@@ -1,6 +1,6 @@
 package com.company;
 
-public class Tripod {
+public class Tripod extends Product{
 
     private int loadCapacity;
     private double minHeight;
