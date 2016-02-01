@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Chargers {
+public class Chargers extends Product{
 
     private int batterySlots;
     private ArrayList<String> types; //TO DO: make enum
