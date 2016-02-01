@@ -1,6 +1,6 @@
 package com.company;
 
-public class Filters {
+public class Filters extends Product{
 
     private int diameter;
     private int thickness;
