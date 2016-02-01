@@ -1,6 +1,6 @@
 package com.company;
 
-public class Battery {
+public class Battery extends Product{
 
     private double voltage;
     private int amperage;
