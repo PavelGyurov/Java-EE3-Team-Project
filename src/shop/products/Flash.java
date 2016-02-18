@@ -6,7 +6,7 @@ public class Flash extends Product {
 	private int mainNumber;
 	private boolean isWirelessControlled;
 
-	public Flash(String name, String description, String model, double amount,
+	public Flash(String name, String description, String model, int amount,
 			double price, int warrantyMonths, int mainNumber,
 			boolean isWirelessControlled) {
 		super(name, description, model, amount, price, warrantyMonths);

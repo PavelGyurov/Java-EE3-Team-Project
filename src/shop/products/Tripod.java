@@ -8,7 +8,7 @@ public class Tripod extends Product {
 	private double maxHeight;
 	private double weight;
 
-	public Tripod(String name, String description, String model, double amount,
+	public Tripod(String name, String description, String model, int amount,
 			double price, int warrantyMonths, int loadCapacity,
 			double minHeight, double maxHeight, double weight) {
 		super(name, description, model, amount, price, warrantyMonths);

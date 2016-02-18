@@ -16,7 +16,7 @@ public class Chargers extends Product {
 	private List<String> extras;
 
 	public Chargers(String name, String description, String model,
-			double amount, double price, int warrantyMonths, int batterySlots,
+			int amount, double price, int warrantyMonths, int batterySlots,
 			double voltage, double amperage) {
 		super(name, description, model, amount, price, warrantyMonths);
 		if (voltage > 0 && amperage > 0 && batterySlots > 0

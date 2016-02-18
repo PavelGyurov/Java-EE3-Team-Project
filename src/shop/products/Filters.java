@@ -7,7 +7,7 @@ public class Filters extends Product {
 	private double thickness;
 
 	public Filters(String name, String description, String model,
-			double amount, double price, int warrantyMonths, double diameter,
+			int amount, double price, int warrantyMonths, double diameter,
 			double thickness) {
 		super(name, description, model, amount, price, warrantyMonths);
 		this.diameter = diameter;

@@ -12,7 +12,7 @@ public class Battery extends Product {
 	private BatteryTechnologyType technologyType;
 
 	public Battery(String name, String description, String model,
-			double amount, double price, int warrantyMonths, double voltage,
+			int	 amount, double price, int warrantyMonths, double voltage,
 			int amperage, BatterySizeType sizeType, BatteryTechnologyType technologyType) {
 		super(name, description, model, amount, price, warrantyMonths);
 		this.voltage = voltage;

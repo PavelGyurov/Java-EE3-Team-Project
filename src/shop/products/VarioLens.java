@@ -4,51 +4,83 @@ import shop.Product;
 
 public class VarioLens extends Product {
 
-	private LensSize lensSize;
-	private BlendSize blendSize;
+//
+//	private LensSize lensSize;
+//	private BlendSize blendSize;
 
-	public VarioLens(String name, String description, String model,
-			double amount, double price, int warrantyMonths, LensSize lensSize,
-			BlendSize blendSize) {
-		super(name, description, model, amount, price, warrantyMonths);
-		this.lensSize = lensSize;
-		this.blendSize = blendSize;
-	}
+    private int lensSizeMin;
+    private int lensSizeMax;
+    private double blendSizeMin;
+    private double blendSizeMax;
 
-	public LensSize getLensSize() {
-		return lensSize;
-	}
+//	public VarioLens(String name, String description, String model,
+//			int amount, double price, int warrantyMonths, LensSize lensSize,
+//			BlendSize blendSize) {
+//		super(name, description, model, amount, price, warrantyMonths);
+//		this.lensSize = lensSize;
+//		this.blendSize = blendSize;
+//	}
 
-	public void setLensSize(LensSize lensSize) {
-		this.lensSize = lensSize;
-	}
+    public VarioLens(String name, String description, String model, int amountInstock,
+                     double price, int warrantyMonths, int lensSizeMin,
+                     int lensSizeMax, double blendSizeMin, double blendSizeMax) {
+        super(name, description, model, amountInstock, price, warrantyMonths);
+        this.lensSizeMin = lensSizeMin;
+        this.lensSizeMax = lensSizeMax;
+        this.blendSizeMin = blendSizeMin;
+        this.blendSizeMax = blendSizeMax;
+    }
 
-	public BlendSize getBlendSize() {
-		return blendSize;
-	}
+    public int getLensSizeMin() {
+        return lensSizeMin;
+    }
 
-	public void setBlendSize(BlendSize blendSize) {
-		this.blendSize = blendSize;
-	}
+    public int getLensSizeMax() {
+        return lensSizeMax;
+    }
+
+    public double getBlendSizeMin() {
+        return blendSizeMin;
+    }
+
+    public double getBlendSizeMax() {
+        return blendSizeMax;
+    }
+
+//	public LensSize getLensSize() {
+//		return lensSize;
+//	}
+//
+//	public void setLensSize(LensSize lensSize) {
+//		this.lensSize = lensSize;
+//	}
+//
+//	public BlendSize getBlendSize() {
+//		return blendSize;
+//	}
+//
+//	public void setBlendSize(BlendSize blendSize) {
+//		this.blendSize = blendSize;
+//	}
 	
-	class LensSize {
-		int min;
-		int max;
-
-		LensSize(int min, int max) {
-			this.min = min;
-			this.max = max;
-		}
-	}
-
-	class BlendSize {
-		double min;
-		double max;
-
-		BlendSize(double min, double max) {
-			this.min = min;
-			this.max = max;
-		}
-	}
+//	public class LensSize {
+//		int min;
+//		int max;
+//
+//		LensSize(int min, int max) {
+//			this.min = min;
+//			this.max = max;
+//		}
+//	}
+//
+//	public class BlendSize {
+//		double min;
+//		double max;
+//
+//		BlendSize(double min, double max) {
+//			this.min = min;
+//			this.max = max;
+//		}
+//	}
 
 }

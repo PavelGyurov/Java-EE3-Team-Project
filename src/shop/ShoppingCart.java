@@ -7,7 +7,7 @@ public class ShoppingCart {
 	private static final String ERR_NO_SUCH_PRODUCT = "No such product in shopping cart: %s";
 
 	private Customer customer;
-	private Map<Product, Double> goods = new HashMap<Product, Double>();
+	private Map<Product, Integer> goods = new HashMap<Product, Integer>();
 
 	// constructors
 	public ShoppingCart(Customer customer) {
@@ -19,25 +19,25 @@ public class ShoppingCart {
 		return customer;
 	}
 
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
-	}
+//	public void setCustomer(Customer customer) {
+//		this.customer = customer;
+//	}
 
-	public Map<Product, Double> getGoods() {
+	public Map<Product, Integer> getGoods() {
 		return goods;
 	}
 
-	public void setGoods(Map<Product, Double> goods) {
-		this.goods = goods;
-	}
+//	public void setGoods(Map<Product, Integer> goods) {
+//		this.goods = goods;
+//	}
 
 	// behavior
 	public void addProduct(Product product) {
 		if (goods.containsKey(product)) {
-			Double amount = goods.get(product);
+			Integer amount = goods.get(product);
 			goods.put(product, amount + 1);
 		} else {
-			goods.put(product, Double.valueOf(1));
+			goods.put(product, Integer.valueOf(1));
 		}
 	}
 
@@ -60,7 +60,7 @@ public class ShoppingCart {
 	
 	private double changeProductQuantity(Product product, boolean operation) {
 		if(goods.containsKey(product)) {
-			Double amount = goods.get(product) + (operation ? 1 : -1);
+			Integer amount = goods.get(product) + (operation ? 1 : -1);
 			goods.put(product, amount);
 			return amount;
 		} else {

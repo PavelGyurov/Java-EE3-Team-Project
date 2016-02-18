@@ -6,18 +6,18 @@ public abstract class Product {
 	private String name;
 	private String description;
 	private String model;
-	private double amount;
+	private int amountInstock;
 	private double price;
 	private int warrantyMonths;
 	// private Category category;
 
 	// constructors
-	// public Product(String name, String description, double amount, double price, Category category) {
-	public Product(String name, String description, String model, double amount, double price, int warrantyMonths) {
+	// public Product(String name, String description, double amountInstock, double price, Category category) {
+	public Product(String name, String description, String model, int amountInstock, double price, int warrantyMonths) {
 		this.name = name;
 		this.description = description;
 		this.model = model;
-		this.amount = amount;
+		this.amountInstock = amountInstock;
 		this.price = price;
 		this.warrantyMonths = warrantyMonths;
 		// this.category = category;
@@ -40,12 +40,12 @@ public abstract class Product {
 		this.description = description;
 	}
 
-	public double getAmount() {
-		return amount;
+	public int getAmountInstock() {
+		return amountInstock;
 	}
 
-	public void setAmount(double amount) {
-		this.amount = amount;
+	public void setAmountInstock(int amountInstock) {
+		this.amountInstock = amountInstock;
 	}
 
 	public String getModel() {
@@ -80,11 +80,11 @@ public abstract class Product {
 
 	// behavior
 	public double increaseAmount(double increase) {
-		return amount += increase;
+		return amountInstock += increase;
 	}
 
 	public double decreaseAmount(double decrease) {
-		return amount -= decrease;
+		return amountInstock -= decrease;
 	}
 
 }

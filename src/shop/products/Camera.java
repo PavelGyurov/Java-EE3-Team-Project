@@ -8,7 +8,7 @@ public class Camera extends Product {
 	private int shutterSpeed;
 	private double displaySize;
 
-	public Camera(String name, String description, String model, double amount,
+	public Camera(String name, String description, String model, int amount,
 			double price, int warrantyMonths, double megaPixels,
 			int isoStandard, int shutterSpeed, double displaySize) {
 		super(name, description, model, amount, price, warrantyMonths);

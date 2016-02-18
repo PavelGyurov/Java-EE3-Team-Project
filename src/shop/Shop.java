@@ -7,43 +7,23 @@ import java.util.Map;
 import shop.enums.CustomerOnlineStatus;
 
 public class Shop {
-	private String name;
-	private String description;
+
+    private static Shop shop;
 
 	// all customers by their usernames
 	private Map<String, Customer> customers = new HashMap<String, Customer>();
 
 	// all customers by their online status
 	private Map<Customer, CustomerOnlineStatus> customersStatuses = new HashMap<Customer, CustomerOnlineStatus>();
-
-	// constructors
-
-	// getters/setters
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
 	
 	public boolean isUsernameUnique(String probeUsername) {
 		return !customers.containsKey(probeUsername);
 	}
 
-	public Customer registerCustomer(String username, String password, String fullname, List<Address> addresses) {
+	public Customer registerCustomer(String username, String password, String fullname, Address address) {
 		Customer customer = null;
 		if (isUsernameUnique(username)) {
-			customer = new Customer(username, password, fullname, addresses);
+			customer = new Customer(username, password, fullname, address);
 			customers.put(username, customer);
 			customersStatuses.put(customer, CustomerOnlineStatus.OFFLINE);
 			return customer;
@@ -54,6 +34,8 @@ public class Shop {
 	}
 
 	public void doCustomerLogin(Customer customer) {
+
+        //if username and password match database query
 		customer.setStatus(CustomerOnlineStatus.ONLINE);
 		customersStatuses.put(customer, CustomerOnlineStatus.ONLINE);
 	}
@@ -62,4 +44,11 @@ public class Shop {
 		customer.setStatus(CustomerOnlineStatus.OFFLINE);
 		customersStatuses.put(customer, CustomerOnlineStatus.OFFLINE);
 	}
+
+    public static Shop getShop(){
+        if (shop == null){
+            shop = new Shop();
+        }
+        return shop;
+    }
 }

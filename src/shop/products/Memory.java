@@ -11,7 +11,7 @@ public class Memory extends Product {
 	private int readingSpeed;
 	private int writingSpeed;
 
-	public Memory(String name, String description, String model, double amount,
+	public Memory(String name, String description, String model, int amount,
 			double price, int warrantyMonths, int memoryCapacity,
 			MemoryClass memoryClass, MemoryType memoryType, int readingSpeed, int writingSpeed) {
 		super(name, description, model, amount, price, warrantyMonths);

@@ -8,7 +8,7 @@ public class Customer {
 	private String username;
 	private String password;
 	private String fullname;
-	private List<Address> addresses;
+	private Address address;
 
 	private CustomerOnlineStatus status;
 	private ShoppingCart shoppingCart;
@@ -22,18 +22,14 @@ public class Customer {
 		this.shoppingCart = new ShoppingCart(this);
 	}
 
-	public Customer(String username, String password, String fullname, List<Address> addresses) {
+	public Customer(String username, String password, String fullname, Address address) {
 		this(username, password, fullname);
-		this.addresses = addresses;
+		this.address = address;
 	}
 
 	// getters/setters
 	public String getUsername() {
 		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
 	}
 
 	public String getPassword() {
@@ -52,15 +48,11 @@ public class Customer {
 		this.fullname = fullname;
 	}
 
-	public List<Address> getAddress() {
-		return addresses;
-	}
+    public Address getAddress() {
+        return address;
+    }
 
-	public void setAddress(List<Address> addresses) {
-		this.addresses = addresses;
-	}
-
-	public ShoppingCart getShoppingCart() {
+    public ShoppingCart getShoppingCart() {
 		return shoppingCart;
 	}
 
@@ -68,13 +60,6 @@ public class Customer {
 		this.shoppingCart = shoppingCart;
 	}
 
-	public List<Address> getAddresses() {
-		return addresses;
-	}
-
-	public void setAddresses(List<Address> addresses) {
-		this.addresses = addresses;
-	}
 
 	public CustomerOnlineStatus getStatus() {
 		return status;
