@@ -6,7 +6,7 @@ import java.sql.*;
 public class DBManager {
 
     private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private static final String DB_URL = "jdbc:mysql://localhost/";
+    private static final String DB_URL = "jdbc:mysql://test/test?allowMultiQueries=true";
     private static final String USER = "root";
     private static final String PASS = "r00tP@ss";
     private static DBManager dbManager;
