@@ -13,8 +13,8 @@ public class Memory extends Product {
 
 	public Memory(String name, String description, String model, int amount,
 			double price, int warrantyMonths, int memoryCapacity,
-			MemoryClass memoryClass, MemoryType memoryType, int readingSpeed, int writingSpeed) {
-		super(name, description, model, amount, price, warrantyMonths);
+			MemoryClass memoryClass, MemoryType memoryType, int readingSpeed, int writingSpeed, String image) {
+		super(name, description, model, amount, price, warrantyMonths, image);
 		this.memoryCapacity = memoryCapacity;
 		this.memoryClass = memoryClass;
 		this.memoryType = memoryType;

@@ -10,8 +10,8 @@ public class Camera extends Product {
 
 	public Camera(String name, String description, String model, int amount,
 			double price, int warrantyMonths, double megaPixels,
-			int isoStandard, int shutterSpeed, double displaySize) {
-		super(name, description, model, amount, price, warrantyMonths);
+			int isoStandard, int shutterSpeed, double displaySize, String image) {
+		super(name, description, model, amount, price, warrantyMonths, image);
 		this.megaPixels = megaPixels;
 		this.isoStandard = isoStandard;
 		this.shutterSpeed = shutterSpeed;

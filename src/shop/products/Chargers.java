@@ -17,8 +17,8 @@ public class Chargers extends Product {
 
 	public Chargers(String name, String description, String model,
 			int amount, double price, int warrantyMonths, int batterySlots,
-			double voltage, double amperage) {
-		super(name, description, model, amount, price, warrantyMonths);
+			double voltage, double amperage, String image) {
+		super(name, description, model, amount, price, warrantyMonths, image);
 		if (voltage > 0 && amperage > 0 && batterySlots > 0
 				&& batterySlots <= MAX_BATTERY_SLOTS) {
 			this.batterySlots = batterySlots;

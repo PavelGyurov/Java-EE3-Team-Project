@@ -9,17 +9,19 @@ public abstract class Product {
 	private int amountInstock;
 	private double price;
 	private int warrantyMonths;
+	private String image;
 	// private Category category;
 
 	// constructors
 	// public Product(String name, String description, double amountInstock, double price, Category category) {
-	public Product(String name, String description, String model, int amountInstock, double price, int warrantyMonths) {
+	public Product(String name, String description, String model, int amountInstock, double price, int warrantyMonths, String image) {
 		this.name = name;
 		this.description = description;
 		this.model = model;
 		this.amountInstock = amountInstock;
 		this.price = price;
 		this.warrantyMonths = warrantyMonths;
+        this.image = image;
 		// this.category = category;
 	}
 

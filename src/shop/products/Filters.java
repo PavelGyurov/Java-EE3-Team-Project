@@ -8,8 +8,8 @@ public class Filters extends Product {
 
 	public Filters(String name, String description, String model,
 			int amount, double price, int warrantyMonths, double diameter,
-			double thickness) {
-		super(name, description, model, amount, price, warrantyMonths);
+			double thickness,String image) {
+		super(name, description, model, amount, price, warrantyMonths, image);
 		this.diameter = diameter;
 		this.thickness = thickness;
 	}

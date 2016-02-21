@@ -12,8 +12,8 @@ public class Bag extends Product {
 
 	public Bag(String name, String description, String model, int amount,
 			double price, int warrantyMonths, WearPlaceType wearPlaceType,
-			DevicePlaceType devicePlaceType, CameraType cameraType) {
-		super(name, description, model, amount, price, warrantyMonths);
+			DevicePlaceType devicePlaceType, CameraType cameraType, String image) {
+		super(name, description, model, amount, price, warrantyMonths, image);
 		this.wearPlaceType = wearPlaceType;
 		this.devicePlaceType = devicePlaceType;
 		this.cameraType = cameraType;

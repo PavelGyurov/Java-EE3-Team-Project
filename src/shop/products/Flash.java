@@ -8,8 +8,8 @@ public class Flash extends Product {
 
 	public Flash(String name, String description, String model, int amount,
 			double price, int warrantyMonths, int mainNumber,
-			boolean isWirelessControlled) {
-		super(name, description, model, amount, price, warrantyMonths);
+			boolean isWirelessControlled, String image) {
+		super(name, description, model, amount, price, warrantyMonths, image);
 		this.mainNumber = mainNumber;
 		this.isWirelessControlled = isWirelessControlled;
 	}

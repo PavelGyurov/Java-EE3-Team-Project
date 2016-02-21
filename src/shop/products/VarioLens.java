@@ -23,8 +23,8 @@ public class VarioLens extends Product {
 
     public VarioLens(String name, String description, String model, int amountInstock,
                      double price, int warrantyMonths, int lensSizeMin,
-                     int lensSizeMax, double blendSizeMin, double blendSizeMax) {
-        super(name, description, model, amountInstock, price, warrantyMonths);
+                     int lensSizeMax, double blendSizeMin, double blendSizeMax, String image) {
+        super(name, description, model, amountInstock, price, warrantyMonths, image);
         this.lensSizeMin = lensSizeMin;
         this.lensSizeMax = lensSizeMax;
         this.blendSizeMin = blendSizeMin;

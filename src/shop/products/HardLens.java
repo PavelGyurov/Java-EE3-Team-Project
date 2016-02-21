@@ -9,8 +9,8 @@ public class HardLens extends Product {
 	private double blendSizeMax;
 
 	public HardLens(String name, String description, String model, int amountInstock, double price,
-					int warrantyMonths, int lensSize, double blendSizeMin, double blendSizeMax) {
-		super(name, description, model, amountInstock, price, warrantyMonths);
+					int warrantyMonths, int lensSize, double blendSizeMin, double blendSizeMax, String image) {
+		super(name, description, model, amountInstock, price, warrantyMonths, image);
 		this.lensSize = lensSize;
 		this.blendSizeMin = blendSizeMin;
 		this.blendSizeMax = blendSizeMax;

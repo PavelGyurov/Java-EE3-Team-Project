@@ -13,8 +13,8 @@ public class Battery extends Product {
 
 	public Battery(String name, String description, String model,
 			int	 amount, double price, int warrantyMonths, double voltage,
-			int amperage, BatterySizeType sizeType, BatteryTechnologyType technologyType) {
-		super(name, description, model, amount, price, warrantyMonths);
+			int amperage, BatterySizeType sizeType, BatteryTechnologyType technologyType, String image) {
+		super(name, description, model, amount, price, warrantyMonths, image);
 		this.voltage = voltage;
 		this.amperage = amperage;
 		this.sizeType = sizeType;
