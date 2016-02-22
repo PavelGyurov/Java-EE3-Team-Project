@@ -51,6 +51,7 @@ public class DBManager {
     }
 
     public static void executeDBUpdate(String sql){
+        DBManager.getDbManager();
         try {
             //Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
@@ -82,6 +83,7 @@ public class DBManager {
     }
 
     public static ResultSet selectData(String sql){
+        DBManager.getDbManager();
         ResultSet rs = null;
         try {
             //Class.forName("com.mysql.jdbc.Driver");
