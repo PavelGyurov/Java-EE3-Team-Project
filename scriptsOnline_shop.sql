@@ -49,6 +49,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`product` (
   `warranty_months` INT NULL,
   `categoryID` INT NOT NULL,
   `caracteristicsID` INT NULL,
+  'picture' VARBINARY(MAX) NULL,
   PRIMARY KEY (`id`),
   INDEX `characteristics_id_idx` (`caracteristicsID` ASC),
   INDEX `category_id_idx` (`categoryID` ASC),
