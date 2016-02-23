@@ -43,7 +43,7 @@ public class DBManager {
         }
     }
 
-    public static DBManager getDbManager(){
+    public static synchronized DBManager getDbManager(){
         if (dbManager == null){
             dbManager = new DBManager();
         }
